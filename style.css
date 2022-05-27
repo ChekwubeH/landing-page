@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     margin: 0px;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header-container, footer {
@@ -14,6 +17,7 @@ body {
 
 .header-logo, .action-header {
     font-size: 24px;
+    font-weight: bold;
 }
 
 .main-text {
@@ -26,30 +30,14 @@ a, .secondary-text, .action-text, footer {
     color: #E5E7EB
 }
 
-.action-container, button {
-    background-color: #3882F6;
-    color: #ffffff;
-}
-
-.info-header {
-    font-size: 36px;
-    font-weight: bolder;
-    color: #1F2937;
-    padding-bottom: 30px;
-}
-
-.quote-container {
-    background-color: #E5E7EB;
-}
-
 .header-container {
-    padding: 10px 100px 50px;
+    padding: 20px 200px 100px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
 }
 
 ul.navlink {
@@ -82,16 +70,38 @@ button {
     border: none;
 }
 
-.header-image > img {
-    min-width: 400px;
-    height: 200px;
+.header-image {
+    background-color: #696969;
+    color: #ffffff;
+    min-width: 600px;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-container, button {
+    background-color: #3882F6;
+    color: #ffffff;
+}
+
+button {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .info-container {
     display: flex;
     flex-direction: column;
     align-items: center;;
-    padding: 30px 100px 50px;
+    padding: 50px 200px 150px;
+}
+
+.info-header {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    padding-bottom: 30px;
 }
 
 .info-images {
@@ -101,19 +111,20 @@ button {
 }
 
 .info-images img {
-    min-height: 100px;
-    min-width: 100px;
+    min-height: 200px;
+    min-width: 200px;
     border: 3px solid #3882F6;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .info-images p {
     margin: 0;
-    width: 100px;
+    width: 200px;
 }
 
 .quote-container {
-    padding: 50px 400px;
+    background-color: #E5E7EB;
+    padding: 100px 400px;
 }
 
 .quote {
@@ -130,8 +141,9 @@ button {
 }
 
 .action-container {
-    margin: 50px 100px;
-    padding: 40px 100px;
+    margin: 100px 200px;
+    padding: 50px 100px;
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
 }
